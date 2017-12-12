@@ -1,0 +1,24 @@
+<h1>Behold, this is our component library.</h1>
+<p>
+  It has a bunch of components in it. This is the app in which we develop and test them, making sure they look and behave the
+  way we expect. It should also be used as a reference guide for developers who want to use them.
+</p>
+<p>
+  Below are the components we have for you, along with some notes about how to use them, or something.
+</p>
+
+<section>
+  <h3>People</h3>
+  <p>
+    Given an array of Person objects, this component renders a list of humans.
+  </p>
+  <pre><code>&lt;co-people [people]="people"&gt;&lt;/co-people&gt;</code></pre>
+  <co-people [people]="people"></co-people>
+</section>
+
+<section>
+  <h3>Person</h3>
+  <p>Given a single Person object, this component renders a single human.</p>
+  <pre><code>&lt;co-person [person]="person"&gt;&lt;/co-person&gt;</code></pre>
+  <co-person [person]="{ last: 'Nunciato', first: 'Joe' }"></co-person>
+</section>
