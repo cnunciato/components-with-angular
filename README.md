@@ -14,7 +14,7 @@ The library itself is located in:
 components/src/app/lib
 ```
 
-and is authored as an indepenently distributable Angular module. The sample app imports it in its main `AppModule` (`app.module.ts`):
+and is authored as an independently distributable Angular module. The sample app imports this module into its main `AppModule` (`app.module.ts`):
 
 ```
 import { LibModule } from 'components';
@@ -29,7 +29,7 @@ import { LibModule } from 'components';
 export class AppModule { }
 ```
 
-and by doing so, exposes all of its components to the consuming application.
+which makes all of the library's components available to it.
 
 This sort of setup allows designers to develop the component library in isolation, without having to set up an end-to-end development environment, but also allows consumers of the library to make changes to the library and see those changes reflected immediately in their applications as they develop them. It also allows changes to the library and application to be tested, reviewed and committed simultaneously.
 
